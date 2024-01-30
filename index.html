@@ -1,1 +1,232 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dimadisaputra - Protofolio</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/img/site.webmanifest" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar-container">
+        <div class="navbar">
+          <div class="circle">
+            <img src="/assets/img/nav-logo.png" alt="Dimas Adi Saputra" />
+          </div>
+          <nav class="nav-list" id="nav-list">
+            <ul>
+              <li>
+                <a href="#about-me">About Me</a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="icon-bars">
+            <a
+              href="javascript:void(0);"
+              aria-label="Bar"
+              onclick="showDropdown()"
+            >
+              <i class="fas fa-bars" id="iconBars"></i>
+            </a>
+          </div>
+        </div>
+
+        <nav class="dropdown" id="dropdown">
+          <a href="#about-me" onclick="closeDropdown()">About Me</a>
+          <a href="#skills" onclick="closeDropdown()">Skills</a>
+          <a href="#experience" onclick="closeDropdown()">Experience</a>
+          <a href="#contact" onclick="closeDropdown()">Contact</a>
+        </nav>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-caption">
+          <p class="code">print('Hello World')</p>
+          <h1>Dimas Adi Saputra</h1>
+          <p>Data Engineer</p>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="assets/img/Leonardo_Diffusion_XL_Data_Black_White_1.jpg"
+            alt="Data"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        <article id="about-me">
+          <h2>About Me</h2>
+          <p>
+            I'm Dimas. I'm a passionate individual with a keen interest in the
+            realms of data, machine learning, and artificial intelligence (AI).
+            I firmly believe that these technologies hold immense potential to
+            reshape the world and offer innovative solutions to a plethora of
+            challenges.
+          </p>
+          <p>
+            I'm wholeheartedly open to collaboration, learning, and contributing
+            within an environment that's focused on innovation in the realms of
+            data, machine learning, and AI. If you share similar interests or
+            would like to engage in a discussion, please don't hesitate to reach
+            out. Let's embark on this journey together to explore the boundless
+            potential of the world of data and artificial intelligence.
+          </p>
+        </article>
+        <article id="skills">
+          <h2>Skills</h2>
+          <div class="skill-logo">
+            <img
+              src="/assets/img/python-logo-black-and-white.png"
+              alt="Python"
+            />
+            <img
+              src="/assets/img/javascript-logo-black-and-white.png"
+              alt="JavaScript"
+            />
+            <img
+              src="/assets/img/postgresql-inc-logo-black-and-white.png"
+              alt="PostgreSQL"
+            />
+            <img src="/assets/img/kafka-logo-vector.svg" alt="Apache Kafka" />
+          </div>
+        </article>
+        <article id="experience">
+          <h2>Experience</h2>
+          <div class="card-container">
+            <section id="nolimit" class="card">
+              <div class="experience-img">
+                <img
+                  src="/assets/img/NoLimit-Logo-1.webp"
+                  alt="Nolimit Indonesia"
+                />
+              </div>
+              <div class="experience-description">
+                <p class="title">
+                  <b>Nolimit Indonesia - Internship (Jan 2023 - Nov 2023)</b>
+                </p>
+                <p>
+                  As a Data Engineer at Nolimit Indonesia, my role revolves
+                  around the development of innovative scraper solutions to
+                  extract valuable data from various websites. I am responsible
+                  for designing, implementing, and maintaining specialized web
+                  scrapers, with a primary focus on media portals, social
+                  platforms like TikTok, and Google Maps reviews.
+                </p>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <aside>
+        <article id="contact">
+          <h2>Contact</h2>
+          <div class="contact">
+            <div class="personal">
+              <img src="/assets/img/profile-pic2.png" alt="Dimas Adi Saputra" />
+            </div>
+            <div class="social-media">
+              <p>
+                "Let's connect! I'm thrilled to hear from you. Feel free to send
+                a direct message on my social media platforms below. I love
+                interacting and look forward to the opportunity to communicate
+                with you."
+              </p>
+              <!-- <p>Thank you for visiting!</p> -->
+
+              <ul>
+                <li>
+                  <a href="mailto:dimadisaputra@gmail.com" aria-label="Email">
+                    <i class="far fa-envelope"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/dimadisaputra/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Linkedin"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/dimadisaputra"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/dimadisaputra"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Github"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
